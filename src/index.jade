@@ -1,71 +1,87 @@
 doctype html
 html
   head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title TKPPL
-
-    link(rel='stylesheet', type='text/css', href='build/build.css')
-
-  body
-
-    article
-
-      section
-        h1 TKPPL
-
-      section
-        h2 SMART CAR
-        h3 Smart car adalah salah satu proyek yang paling monumental dari google sesudah Google Loon. <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
-
-      section
-        h2 Google’s Self Driving Car
-        h3 Google’s Self Driving Car disingkat SDC adalah proyek Google X yang melibatkan mobil otonom dan mobil listrik yang dilengkapi perangkat lunak berteknologi terkini dari Google. <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
-
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
-
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+    meta(http-equiv='Content-Type', content='text/html; charset=ISO-8859-1')
+    meta(name='viewport', content='width=device-width')
+    title Bespoke.js
+    meta(content='Bespoke.js', property='og:title')
+    meta(content='Bespoke.js', property='og:site_name')
+    meta(content='http://markdalgleish.com/projects/bespoke.js/', property='og:url')
+    meta(content='website', property='og:type')
+    link(rel='stylesheet', type='text/css', href='./Bespoke.js_files/style.css')
+    link(rel='stylesheet', type='text/css', href='./Bespoke.js_files/themes.css')
+    link(href='./Bespoke.js_files/css', rel='stylesheet', type='text/css')
+  body.cube
+    #main
+      header
+        p.hidden
+          span#input-method Tekan arah panah atas dan bawah 
+          | untuk mengganti mode tampilan.
+      #title
+        a(href='katakana.html')
+          span Augmented Reality
+      p#second
         ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
-
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
+          li a-column 
+          li i-column 
+          li u-column 
+          li e-column 
           li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
-
-    script(src='build/build.js')
+            | o-column
+            span#dummy
+            article.bespoke
+              section#mix
+                a.satu(href='#', onclick="playSound('./sound/a.mp3');")
+                  b Team 2 
+                h6
+                  br
+                  | Putri Simangunsong
+                  br
+                  |  (151110661)
+                h6
+                  br
+                  | Novita Marpaung 
+                  br
+                  | (151110661)
+              section#mix
+                a(href='#')
+                  b Pengertian
+                h6
+                  | Augmented Reality (AR) adalah menggabungkan dunia nyata dan virtual, bersifat interaktif secara realtime, dan merupakan animasi 3D.
+              section#mix
+                a(href='#') wkwkwkwk 
+                h6
+                  | Teknologi AR ini biasanya digunakan dibidang militer, medis dan manufaktur. Contoh yang sering digunakan oleh pengguna adalah Google Translate.
+              section#mix
+                a(href='#') wkwkwkwk 
+                h5 ehehheheheheheheheh
+              section#mix
+                a(href='#') wkwkwkwk 
+                h5 ehehheheheheheheheh
+              section#mix
+                a(href='#') wkwkwkwk 
+                h5 ehehheheheheheheheh
+              section#mix
+                a(href='#') wkwkwkwk 
+                h5 ehehheheheheheheheh
+              section#mix
+                a(href='#') wkwkwkwk 
+                h5 ehehheheheheheheheh
+              section#mix
+                a(href='#') wkwkwkwk 
+                h5 ehehheheheheheheheh
+              section#mix
+                a(href='#') wkwkwkwk 
+                h5 ehehheheheheheheheh
+      footer
+        .themes
+          p
+            strong
+              | MODE VIEW
+              span.colon :
+            span#theme Cube
+          #up-arrow.up.arrow ^
+          #down-arrow.down.arrow ^
+      script(src='./Bespoke.js_files/bespoke.min.js')
+      script(src='./Bespoke.js_files/demo.js')
+      script(src='./Bespoke.js_files/sound.js')
